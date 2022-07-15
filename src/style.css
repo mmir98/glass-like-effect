@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+}
+
+.tile{
+    /* width: 100vmin; */
+    flex: 0 0 auto;
+}
+
+.tile__figure{
+    padding: 0;
+    margin: 0;
+}
+
+.tile__image{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    display: none;
+}
+
+.tile__image_hover{
+    display: none;
+}
+
+.canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    width: 100%;
+    height: 100vh;
+    z-index: 9;
+}
